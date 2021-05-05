@@ -1,6 +1,6 @@
 AFRAME.registerComponent('car-model', {
     schema:{
-        modelRef: {type: 'string', default: '../assets/car/scene.gltf'}
+        modelRef: {type: 'string', default: './assets/car/scene.gltf'}
     },
     init: function(){
         this.el.setAttribute('gltf-model', this.data.modelRef)
